@@ -2,6 +2,7 @@ package com.example.travelblog;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,8 +12,14 @@ import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import com.google.android.material.textfield.TextInputLayout;
+
+import java.time.LocalTime;
+import java.util.Date;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -109,5 +116,13 @@ public class LoginActivity extends AppCompatActivity {
         Intent intent = new Intent(this,MainActivity.class);
         startActivity(intent);
     }
+
+//
+//    private static String DynamicDate(){
+//        Calendar c = Calendar.getInstance();
+//        c.add(Calendar.DATE, 1);
+//        @SuppressLint("SimpleDateFormat") SimpleDateFormat format1 = new SimpleDateFormat("MM-dd-yyyy");
+//        return format1.format(c.getTime());
+//    }
 
 }
