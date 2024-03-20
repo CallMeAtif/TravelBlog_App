@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -10,7 +11,7 @@
         android:scaleType="centerCrop"
         android:layout_width="0dp"
         android:layout_height="250dp"
-        android:src="@drawable/sydney_image"
+        tools:src="@drawable/sydney_image"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
@@ -26,7 +27,7 @@
         android:shadowDx="1"
         android:shadowDy="1"
         android:shadowRadius="2"
-        android:text="March 14, 2024"
+        tools:text="March 14, 2024"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="@+id/imageMain"
         app:layout_constraintEnd_toEndOf="parent"
@@ -37,7 +38,7 @@
         style="@style/TextAppearance.MaterialComponents.Headline5"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="G'day from Sydney"
+        tools:text="G'day from Sydney"
         android:textColor="@color/white"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
@@ -58,7 +59,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/avatar"
+        tools:src="@drawable/avatar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageMain" />
 
@@ -69,7 +70,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:text="User_Name"
+        tools:text="User_Name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageAvatar"
         app:layout_constraintTop_toTopOf="@+id/imageAvatar" />
@@ -82,7 +83,7 @@
         android:layout_marginStart="16dp"
         android:isIndicator="true"
         android:numStars="5"
-        android:rating="4.4"
+        tools:rating="4.4"
         android:stepSize="0.1"
         app:layout_constraintBottom_toBottomOf="@+id/imageAvatar"
         app:layout_constraintTop_toBottomOf="@+id/textAuthor"
@@ -94,7 +95,7 @@
         style="@style/TextAppearance.MaterialComponents.Body2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="4.4"
+        tools:text="4.4"
         android:layout_marginStart="4dp"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@id/ratingBar"
@@ -106,7 +107,7 @@
         android:textColor="@color/grey500"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="(2687 views)"
+        tools:text="(2687 views)"
         android:layout_marginStart="4dp"
         app:layout_constraintStart_toEndOf="@id/textRating"
         app:layout_constraintBottom_toBottomOf="@id/ratingBar"
@@ -120,7 +121,7 @@
         android:layout_marginLeft="16dp"
         android:layout_marginTop="8dp"
         android:layout_marginRight="16dp"
-        android:text="Australia is one of the most popular travel destinations in the world."
+        tools:text="Australia is one of the most popular travel destinations in the world."
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageAvatar" />
